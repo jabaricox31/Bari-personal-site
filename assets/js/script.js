@@ -22,3 +22,19 @@ function sendMail() {
     .catch(err=>console.log(err));
 
 }
+
+function doSlowFade(){
+  topnav = document.getElementById("myTopnav");
+  firstHeader = document.getElementById("FirstHeader");
+  coverPhoto = document.getElementById("CoverPhotoHeader");
+  
+  topnav.style.visibility = "visible";
+  firstHeader.style.visibility = "visible";
+  coverPhoto.style.visibility = "visible";
+  if(window.scrollY < 600)
+  {
+    topnav.classList.add("slow-fade");
+    firstHeader.classList.add("slow-fade");
+    coverPhoto.classList.add("slow-fade");
+  }
+}

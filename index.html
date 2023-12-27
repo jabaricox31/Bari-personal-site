@@ -22,7 +22,7 @@
     })();
   </script>
   </head>
-<body>
+<body onload="doSlowFade()">
     <div class="nav-transparent" id="myTopnav">
         <a href="#home" id="homenav">Home</a>
         <a href="#about" id="aboutnav">About</a>
@@ -37,8 +37,8 @@
     </div>
     <!-- <embed src="assets/music/Madonna - Back That Up To The Beat (TikTok Version) Lyrics.mp3" loop="true" autostart="true" width="0" height="0"> -->
       <div class="fakebody" id="home">
-        <h1>Jabari Cox</h1>
-        <div class="CoverPhotoWrapper">
+        <h1 id="FirstHeader">Jabari Cox</h1>
+        <div class="CoverPhotoWrapper" id="CoverPhotoHeader">
             <img src="assets/images/IMG-1675.jpg" style="height: 400px; width: 300px;" class="CoverPhoto"/>
         </div>
         <a onclick="topFunction()" id="myBtn" href="#home"><i class="fa-solid fa-arrow-up"></i></a>
